@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "238220537212",
+    "firebase_url": "https://chasingsuccess-ecca7.firebaseio.com",
+    "project_id": "chasingsuccess-ecca7",
+    "storage_bucket": "chasingsuccess-ecca7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238220537212:android:1eac414d17f33c727c48f9",
+        "android_client_info": {
+          "package_name": "com.cmpundhir.cm.chasingsuccess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238220537212-2c89tc70s5a141925q231ner8rh4ik28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cmpundhir.cm.chasingsuccess",
+            "certificate_hash": "92ee1811b9aee6122ee5271bce32e5ec101c4e7e"
+          }
+        },
+        {
+          "client_id": "238220537212-njhmjq3e66legk3io9llrvr4tcod3pen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1QrJ1h9MuRKeJBhadv6Ud6W1yrXrkyVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238220537212-njhmjq3e66legk3io9llrvr4tcod3pen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
