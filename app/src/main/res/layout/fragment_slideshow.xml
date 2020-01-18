@@ -61,6 +61,26 @@
             android:id="@+id/eAddr"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/prevImg"
+            android:background="@drawable/rectangle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <Button
+            android:id="@+id/upBtn"
+            android:textColor="#fff"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableStart="@android:drawable/ic_menu_upload"
+            android:text="Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

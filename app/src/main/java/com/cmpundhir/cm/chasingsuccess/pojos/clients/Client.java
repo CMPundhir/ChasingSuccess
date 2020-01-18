@@ -6,6 +6,7 @@ public class Client {
     private String contactNumber;
     private String email;
     private String address;
+    private String img;
 
     public String getFirmName() {
         return firmName;
@@ -45,5 +46,13 @@ public class Client {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

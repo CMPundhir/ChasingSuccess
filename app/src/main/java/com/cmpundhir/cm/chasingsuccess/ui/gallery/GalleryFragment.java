@@ -2,6 +2,7 @@ package com.cmpundhir.cm.chasingsuccess.ui.gallery;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.cmpundhir.cm.chasingsuccess.R;
 import com.cmpundhir.cm.chasingsuccess.pojos.clients.Client;
 import com.cmpundhir.cm.chasingsuccess.utils.EndPoints;
+import com.cmpundhir.cm.chasingsuccess.utils.ImageUtils;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -71,7 +73,16 @@ public class GalleryFragment extends Fragment {
             public void onBindViewHolder(ClientHolder holder, int position, Client model) {
                 // Bind the Chat object to the ChatHolder
                 // ...
-                holder.txt.setText(options.getSnapshots().get(position).getFirmName());
+                // Log.d("clientKey",optio);
+                Client client = options.getSnapshots().get(position);
+                holder.tFirmNAme.setText(client.getFirmName());
+                holder.tPOC.setText(client.getPointOfContact());
+                holder.tCont.setText(client.getContactNumber());
+                holder.tEmail.setText(client.getEmail());
+                holder.tAddr.setText(client.getAddress());
+                if(client.getImg()!=null && !TextUtils.isEmpty(client.getImg())){
+                    holder.imageView.setImageBitmap(ImageUtils.convert(client.getImg()));
+                }
             }
 
             @Override
@@ -88,7 +99,7 @@ public class GalleryFragment extends Fragment {
                 // Called each time there is a new query snapshot. You may want to use this method
                 // to hide a loading spinner or check for the "no documents" state and update your UI.
                 // ...
-                adapter.notifyDataSetChanged();
+               // adapter.notifyDataSetChanged();
             }
 
             @Override
